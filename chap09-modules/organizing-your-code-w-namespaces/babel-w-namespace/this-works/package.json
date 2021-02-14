@@ -12,8 +12,8 @@
     "@babel/preset-typescript": "^7.12.16"
   },
   "scripts": {
-    "run": "babel-node --extensions '.ts' ",
-    "transpile": "babel "
+    "n": "babel-node --extensions '.ts'",
+    "c": "babel"
   }
 }
 
