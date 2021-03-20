@@ -1,0 +1,19 @@
+{
+  "name": "babel-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Apollo Tang",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/node": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-typescript": "^7.12.16"
+  },
+  "scripts": {
+    "n": "babel-node --extensions '.ts'",
+    "c": "babel"
+  }
+}
+
