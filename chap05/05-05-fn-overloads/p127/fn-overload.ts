@@ -5,6 +5,7 @@ function totalLength(x: (string | any[]), y: (string | any[])): number {
   return total;
 }
 
+// @ts-ignore
 totalLength( )
          // ^
          // totalLength(x: string, y: string): number
