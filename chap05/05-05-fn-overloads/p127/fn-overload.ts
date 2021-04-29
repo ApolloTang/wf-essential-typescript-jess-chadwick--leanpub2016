@@ -1,6 +1,16 @@
-function totalLength(x: string, y: string): number
-function totalLength(x: any[], y: any[]): number
-function totalLength(x: (string | any[]), y: (string | any[])): number {
+//
+// This function sum the values of length property in its input.
+// However, if the property are of different type (eg array and
+// string), it makes no sense to add the length of array to length
+// of string. So we overload the function signature to make sure the
+// function take same type of input.
+//
+
+function totalLength(x: string, y: string): number  // case one, both type are string
+function totalLength(x: any[], y: any[]): number    // case two, both type are array
+// The above two line are the expose overlaod. The following is the required by typescript
+// syntax:
+function totalLength(x: (string | any[]), y: (string | any[])): number {  //
   const total: number = x.length + y.length;
   return total;
 }
